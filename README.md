@@ -164,15 +164,6 @@ Common computer skills and Linux basic knowledge.
 - Prometheus
 - Grafana
 
-### Module 12 (3h): GitOps | with ArgoCD
-
-- GitOps Principles
-- Structure of a GitOps Deployment repo
-- Typical GitOps workﬂow
-- Why GitOps
-- ArgoCD
-- Remarks
-
 ## Google Sheet
 
 Enter your group members name and additional information here:
@@ -181,4 +172,4 @@ Enter your group members name and additional information here:
 
 ## Contact
 
-- Stephan Baum: stephan@adaltas.com
+Stephan Baum: stephan@adaltas.com
