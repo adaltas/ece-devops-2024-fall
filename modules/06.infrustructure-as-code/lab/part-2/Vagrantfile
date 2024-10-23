@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Define the gitlab_server VM
   config.vm.define "gitlab_server" do |server|
     # Specify the Vagrant box to use
-    server.vm.box = "centos/7"
+    server.vm.box = "almalinux/9"
     # Specify the VM ip address
     config.vm.network "forwarded_port", guest: 80, host: 8080
     # Specify the VM specs when using the Virtualbox provisioner
