@@ -212,8 +212,8 @@ vagrant provision
     ```
       
 5. Run the 2 other kinds of health checks in the playbook (using the [uri module](https://docs.ansible.com/ansible/latest/modules/uri_module.html)):
-  - [Readiness check](https://docs.gitlab.com/ee/user/admin_area/monitoring/health_check.html#readiness)
-  - [Liveness check](https://docs.gitlab.com/ee/user/admin_area/monitoring/health_check.html#liveness)
+  - [Readiness check](https://docs.gitlab.com/ee/administration/monitoring/health_check.html#readiness)
+  - [Liveness check](https://docs.gitlab.com/ee/administration/monitoring/health_check.html#liveness)
 
 6. Print the results of the health checks in the console.
 
