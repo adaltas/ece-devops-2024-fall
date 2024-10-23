@@ -1,4 +1,3 @@
-
 # Lab
 
 Learn IaC (Infrastructure as Code) by provisioning virtual machines using **imperative** and **declarative** approaches.
@@ -144,13 +143,13 @@ cat /etc/vagrant_provisioned_at
 
 ## Part 2. Declarative - GitLab installation using Vagrant and Ansible Provisioner 
 
-We will install Gitlab on CentOS as described in [the official documentation](https://about.gitlab.com/install/#centos-7). You can try to repeat those steps manually one after another on the VM configured in part 1 of the lab. Usually, when we are installing first time a new software in a testing environment, we do it manually to test each step, and then, after clarifying all the installation processes we automate it using tools like Vagrant and Ansible. 
+We will install Gitlab on AlmaLinux 9 as described in [the official documentation](https://about.gitlab.com/install/#almalinux). You can try to repeat those steps manually one after another on the VM configured in part 1 of the lab. Usually, when we are installing first time a new software in a testing environment, we do it manually to test each step, and then, after clarifying all the installation processes we automate it using tools like Vagrant and Ansible. 
 
-We will use [`ansible_local` provisioner](https://www.vagrantup.com/docs/provisioning/ansible_local.html) what will install Ansible on [CentOS 7](https://www.centos.org/) Linux distribution virtual machine by [Vagrant](https://www.vagrantup.com/). So, you don't need Ansible on your host OS!
+We will use [`ansible_local` provisioner](https://www.vagrantup.com/docs/provisioning/ansible_local.html) what will install Ansible on [AlmaLinux 9](https://almalinux.org/) Linux distribution virtual machine by [Vagrant](https://www.vagrantup.com/). So, you don't need Ansible on your host OS!
 
 ### 1. Prepare a virtual environment
 
-Go to the [`lab/part-2`](lab/part-2) directory and take a look at the [`Vagrantfile`](lab/part-2/Vagrantfile) and at the YAML files [`playbooks/run.yml`](lab/part-2/playbooks/run.yml). To have more information how the `Vagrantfile` is configured follow this [Vagrant Guide](https://docs.ansible.com/ansible/latest/scenario_guides/guide_vagrant.html)
+Go to the [`lab/part-2`](lab/part-2) directory and take a look at the [`Vagrantfile`](lab/part-2/Vagrantfile) and at the YAML files [`playbooks/run.yml`](lab/part-2/playbooks/run.yml). To have more information how the `Vagrantfile` is configured follow this [Vagrant Guide](https://docs.ansible.com/ansible/2.8/scenario_guides/guide_vagrant.html)
 
 In the [`lab/part-2`](lab/part-2) directory, you will find:
 - A `Vagrantfile` that defines the VMs to be managed by Vagrant (1 CentOS 7 VM named `gitlab_server` in our case)
@@ -168,7 +167,7 @@ It will take 5-10 min to install all the necessary software including required p
 
 ### 3. Test the installation 
 
-To test the installation of GitLab you can just open a URL in a browser and make sure it answers with any GitLab page (this is step 3 of the [GitLab installation doc](https://about.gitlab.com/install/#centos-7)).
+To test the installation of GitLab you can just open a URL in a browser and make sure it answers with any GitLab page (this is step 3 of the [GitLab installation doc](https://about.gitlab.com/install/#almalinux).
 
 So, open in your browser the URL - http://localhost:8080. If you see a GitLab sign in page, that means the VM is successfully provisioned.
 
@@ -192,7 +191,7 @@ vagrant provision
 
 ## Part 3. Declarative - Configure a health check for GitLab
 
-1. Read the [GitLab Health Check doc](https://docs.gitlab.com/ee/user/admin_area/monitoring/health_check.html).
+1. Read the [GitLab Health Check doc](https://docs.gitlab.com/ee/administration/monitoring/health_check.html).
 
 2. Run a health check using `curl`:
   - Connect to the VM using `vagrant ssh`.
