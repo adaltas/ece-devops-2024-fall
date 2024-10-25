@@ -1,10 +1,11 @@
 ---
 - name: Install required packages
-  yum:
+  dnf:
     name:
       - curl
       - policycoreutils
       - openssh-server
+      - perl
     state: latest
 
 - name: Enable and start sshd
@@ -30,7 +31,7 @@
     state: reloaded
 
 - name: Install postfix
-  yum:
+  dnf:
     name: postfix
     state: latest
 
@@ -49,7 +50,7 @@
   script: /tmp/script.rpm.sh
 
 - name: Install GitLab
-  yum:
+  dnf:
     name: gitlab-ee
   environment:
     EXTERNAL_URL: http://gitlab.local
