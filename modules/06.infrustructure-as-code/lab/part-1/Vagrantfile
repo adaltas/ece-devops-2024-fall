@@ -29,7 +29,10 @@ Vagrant.configure("2") do |config|
   end
   
   # Start provisioning
-  config.vm.provision "shell",
-    inline: "echo Hello, World"
+  $script = <<-SCRIPT
+  echo I am provisioning...
+  date > /etc/vagrant_provisioned_at
+  SCRIPT
 
+  config.vm.provision "shell", inline: $script
 end

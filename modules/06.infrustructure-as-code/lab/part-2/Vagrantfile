@@ -20,9 +20,9 @@ Vagrant.configure("2") do |config|
     server.vm.provider "virtualbox" do |vb|
       vb.name =  "gitlab.server.local"
       # VM RAM in MB
-      vb.memory = 2048
+      vb.memory = 6134
       # VM CPUs
-      vb.cpus = 1
+      vb.cpus = 4
     end
     config.vm.provider "vmware_desktop" do |vmware|
       vmware.vmx["memsize"] = "2048"
