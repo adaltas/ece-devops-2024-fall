@@ -67,22 +67,6 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
 2. Create configuration:
   - route requests between 2 different versions of your app
   - traffic shifting between 2 different versions of your app
-  
-### 8. Implement Monitoring to your containerized application
-
-1. Install Prometheus and Grafana to your K8s cluster
-
-2. Set up monitoring with Prometheus:
-
-  - Prometheus should contact the application (eg. health check endpoint) and pull its status
-  - You should be able to see the status of the application on Prometheus
-
-3. Set up monitoring with Grafana:
-
-  - Link it to the Prometheus server and display the monitored applications
-  - Create alerts and trigger them by shutting down your applications.
-
-> Note. You can imagine something different and set up monitoring (eg. memory usage, CPU time, ...)
 
 ### 9. Document your project 
 
@@ -167,14 +151,13 @@ List of bonus tasks proposed:
 
 | Subject                                                         |   Code    | Max. grade|
 |:----------------------------------------------------------------|:---------:|:---------:|
-| Enriched web application with automated tests                   |   APP     |    +1     |
+| Enriched web application with automated tests                   |   APP     |    +2     |
 | Continuous Integration and Continuous Delivery (and Deployment) |   CICD    |    +3     |
-| Containerisation with Docker                                    |   D       |    +1     |
+| Containerisation with Docker                                    |   D       |    +2     |
 | Orchestration with Docker Compose                               |   DC      |    +2     |
 | Orchestration with Kubernetes	                                  |   KUB     |    +3     |
 | Service mesh using Istio                                        |   IST     |    +2     |
 | Infrastructure as code using Ansible                            |   IAC     |    +3     |
-| Monitoring                                                      |   MON     |    +2     |
 | Accurate project documentation in README.md file                |   DOC     |    +3     |
 | Each bonus task                                                 |   BNS     |    +1     |
 | Each penalty                                                    |   PNL     |    -1     |

@@ -156,14 +156,6 @@ Common computer skills and Linux basic knowledge.
 - Service mesh
 - Istio
 
-### Module 11 (3h): Monitoring | with Prometheus and Grafana
-
-- Motivations
-- Types of Monitoring
-- Definition
-- Prometheus
-- Grafana
-
 ## Google Sheet
 
 Enter your group members name and additional information here:
